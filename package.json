@@ -1,48 +1,61 @@
 {
-  "name": "smali",
-  "displayName": "Smali",
-  "description": "Smali language support for Visual Studio Code",
-  "version": "1.0.0",
-  "publisher": "crazywolf",
-  "icon": "images/smaliIcon.png",
-  "galleryBanner": {
-    "color": "#FFFFFF",
-    "theme": "light"
-  },
-  "license": "SEE LICENSE IN LICENSE.md",
-  "bugs": {
-    "url": "https://github.com/CrazyWolf2014/vscode-qml/issues"
-  },
-  "homepage": "https://github.com/CrazyWolf2014/vscode-qml/blob/master/README.md",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/CrazyWolf2014/vscode-smali.git"
-  },
-  "engines": {
-    "vscode": "^0.10.1"
-  },
-  "categories": [
-    "Languages"
-  ],
-  "contributes": {
-    "languages": [
-      {
-        "id": "smali",
-        "aliases": [
-          "Smali"
-        ],
-        "extensions": [
-          ".smali"
-        ],
-        "configuration": "./smali.configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "smali",
-        "scopeName": "source.smali",
-        "path": "./syntaxes/smali.tmLanguage"
-      }
-    ]
-  }
+	"name": "smali",
+	"displayName": "Smali",
+	"description": "Smali language support for Visual Studio Code",
+	"version": "1.0.1",
+	"publisher": "crazywolf",
+	"icon": "images/smaliIcon.png",
+	"galleryBanner": {
+		"color": "#FFFFFF",
+		"theme": "light"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"bugs": {
+		"url": "https://github.com/CrazyWolf2014/vscode-qml/issues"
+	},
+	"homepage": "https://github.com/CrazyWolf2014/vscode-qml/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/CrazyWolf2014/vscode-smali.git"
+	},
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Formatters",
+		"Snippets",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:smali"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "smali",
+				"aliases": [
+					"Smali"
+				],
+				"extensions": [
+					".smali"
+				],
+				"configuration": "./smali.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "smali",
+				"scopeName": "source.smali",
+				"path": "./syntaxes/smali.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "56b7fa53-6e18-4eb7-8d2c-8224caa21756",
+		"publisherId": "ac47826e-d7f4-42e8-9979-22e13723181f",
+		"publisherDisplayName": "crazywolf",
+		"installedTimestamp": 1633346337704
+	}
 }
